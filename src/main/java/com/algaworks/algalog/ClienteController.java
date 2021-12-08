@@ -6,13 +6,11 @@ import java.util.List;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.algaworks.algalog.domain.model.Cliente;
-
 //
 @RestController
 public class ClienteController {
      
-	@GetMapping("/clientes")
+	@GetMapping("/cliente")
 	public List<Cliente> listar(){
 	  var cliente1 = new Cliente();
 	  cliente1.setId(1L);
